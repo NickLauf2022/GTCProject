@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap");
+/* Main Pages */
+* {
+  box-sizing: border-box;
+}
+
+header img {
+  float: left;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10rem;
+}
+
+header h1 {
+  float: right;
+}
+
+header nav {
+  clear: both;
+}
+
+header nav ul {
+  background-color: gray;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: blue;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: red;
+}
+
+#media-buttons-container {
+  margin: 1rem 0rem;
+}
+
+#media-buttons-container button {
+  padding: 0.3rem 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  margin-right: 1rem;
+}
+
+#media-buttons-container button:hover {
+  background-color: gray;
+  color: white;
+}
+
+video,
+audio {
+  display: block;
+  margin: 1rem 0rem;
+}
+
+footer {
+  background-color: lightgray;
+  text-align: center;
+}
+
+/* Drag and Drop */
+#gameBoard {
+  width: 345px;
+  height: 345px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#message {
+  background-color: black;
+  font-size: 36px;
+  color: lime;
+  text-align: center;
+  width: 345px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.tile {
+  font-size: 64px;
+  width: 80px;
+  height: 80px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+.square {
+  background-color: black;
+  border: solid;
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+.dragged {
+  background-color: red;
+}
+
+/* AJAX */
+:root {
+  --main-color: #f52d2a;
+  --main-hover-color: #ce2825;
+  --secondary-color: #1195f5;
+  --text-color-1: #707070;
+  --text-color-2: #8f8f8f;
+  --button-color: #7ac7ff;
+  --button-hover-color: #64a8d8;
+  --border-style: 0.2rem solid#dbdbdb;
+}
+
+.ajax {
+  margin: 0rem 1rem;
+  padding: 0;
+  font-family: "Lusitana", serif;
+}
+
+.ajax h1 {
+  color: var(--main-color);
+  font-size: 6rem;
+  margin: 0 0 0 2rem;
+  transition: color 0.3s;
+}
+
+.ajax div {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ajax div p {
+  color: var(--text-color-2);
+  font-size: 2rem;
+}
+
+.ajax div table {
+  border-bottom: 0.1rem solid #dbdbdb;
+  border-collapse: collapse;
+  width: 100%;
+}
+.ajax div table thead {
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+.ajax div table thead th {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.ajax div table tbody {
+  border: 0.1rem solid #dbdbdb;
+  border-top: none;
+  color: var(--text-color-1);
+  font-size: 1.1rem;
+}
+.ajax div table tbody {
+  text-align: center;
+}
+.ajax div table tbody tr td:last-child {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.ajax div button {
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0.2rem 0;
+}
+.ajax div .utility-btn {
+  background-color: var(--button-color);
+  transition: background-color 0.3s;
+}
+.ajax div .utility-btn:hover {
+  background-color: var(--button-hover-color);
+}
+.ajax div table tbody tr td:last-child button {
+  width: 7rem;
+  font-size: 1.1rem;
+}
+.ajax div #long-button-container {
+  margin-top: 1rem;
+}
+.ajax div #long-button-container button {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  transition: background-color 0.3s;
+}
+.ajax div #long-button-container #delete-all-btn {
+  background-color: var(--main-color);
+}
+.ajax div #long-button-container #delete-all-btn:hover {
+  background-color: var(--main-hover-color);
+}
+
+/* Form Pages */
+.ajax div form {
+  margin: 2rem 0rem;
+  border: var(--border-style);
+  border-width: 0.05rem;
+  border-radius: 0.5rem;
+}
+.ajax div form .form-header {
+  text-align: center;
+}
+.ajax div form .form-header h2 {
+  color: var(--text-color-1);
+  font-size: 2rem;
+  margin: 0rem;
+}
+.ajax div form hr {
+  border: none;
+  border-top: 0.4rem solid var(--secondary-color);
+}
+.ajax div form .form-body {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+}
+.ajax div form .form-body .label-input {
+  display: flex;
+  flex-direction: column;
+}
+.ajax div form .form-body .label-input label {
+  color: var(--text-color-2);
+  font-size: 1.3rem;
+}
+.ajax div form .form-body .label-input input {
+  border: var(--border-style);
+  border-width: 0.1rem;
+  height: 2rem;
+}
+.ajax div form .form-body button {
+  min-width: 4.625rem;
+  width: 40%;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .ajax div h1 {
+    font-size: 3rem;
+  }
+
+  .ajax div p {
+    font-size: 1.5rem;
+  }
+
+  .ajax div table thead th {
+    font-size: 1.1rem;
+  }
+  .ajax div table tbody {
+    font-size: 1rem;
+  }
+  .ajax div table tbody tr td:last-child button {
+    width: 5rem;
+    font-size: 1rem;
+  }
+
+  .ajax div form .form-body .label-input label {
+    color: var(--text-color-2);
+    font-size: 1.1rem;
+  }
+  .ajax div form .form-body .label-input input {
+    border: var(--border-style);
+    border-width: 0.1rem;
+    height: 1.5rem;
+  }
+  .ajax div form .form-body button {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 432px) {
+  .ajax div h1 {
+    font-size: 2rem;
+  }
+
+  .ajax div p {
+    font-size: 1.3rem;
+  }
+  .ajax div table {
+    display: block;
+    overflow-x: scroll;
+  }
+}
+
+/* Chat */
+
+.chat .userContainer {
+  float: left;
+  width: 200px;
+  border-right: 1px solid black;
+  height: 300px;
+  padding: 10px;
+  overflow: auto;
+}
+.chat .conversationContainer {
+  float: left;
+  width: 400px;
+  height: 300px;
+  overflow: auto;
+  padding: 10px;
+}
+.chat #data {
+  width: 250px;
+}
