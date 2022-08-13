@@ -1,0 +1,26 @@
+<header>
+  <img
+    src="../public/images/ProfilePhoto.jpg"
+    alt="Picture of Nicholas Laufenberg in a blue collared shirt, carrying a trombone."
+  />
+  <h1>Nick Laufenberg's Site</h1>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="contact">Contact</a></li>
+      <li><a href="drag-drop">Drag</a></li>
+      <li><a href="ajax">AJAX</a></li>
+      <li><a href="chat">Chat</a></li>
+      <li><a href="api/users">CRUD</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h1>GET Request</h1>
+  <div class="results">
+    {{#each data}}
+      <p>{{first_name}} {{last_name}}</p>
+    {{/each}}
+  </div>
+</main>
